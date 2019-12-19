@@ -1,5 +1,4 @@
 # countries-react-api
 Meu Portifólio
 
-Countries React API Application - Deploy on Netlify
-    Link: https://bit.ly/2SaiVuS
+ * Criação de Aplicação Frontend React de uma Rest API https://restcountries.eu/
