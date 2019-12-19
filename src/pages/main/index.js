@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Img from 'react-image'
 
 import api from 'axios'
 
 import './styles.css'
 import search from '../../assets/_ionicons_svg_md-search.svg'
+import load from '../../assets/load.gif'
 
 
 export default class Main extends Component {
@@ -90,8 +92,10 @@ export default class Main extends Component {
                     <Link to={`/country/${countryInfo[country].name}`} 
                          key={country} className='country-card' 
                          name={countryInfo[country].name} >
-                        <img alt={`Bandeira ${countryInfo[country].name}`}
-                            src={countryInfo[country].flag} />
+                        <Img className='flag' src={countryInfo[country].flag}
+                            loader={<img alt={`Bandeira ${countryInfo[country].name}`} 
+                            src={load}
+                            style={{"object-fit": "contain"}} /> }/>
                         <div className='description'>
                             <h2>{countryInfo[country].name}</h2>
                             <p><strong>Population: </strong>

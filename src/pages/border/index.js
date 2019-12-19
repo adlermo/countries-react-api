@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Img from 'react-image'
 
 import api from 'axios'
 
 import '../country/styles.css'
 import arrowback from '../../assets/_ionicons_svg_md-arrow-back.svg'
+import load from '../../assets/load.gif'
 
 export default class Country extends Component {
     state = {
@@ -96,7 +98,9 @@ export default class Country extends Component {
                     </Link>
                 </div>
                 <div className='country-info'>
-                    <img alt={`bandeira ${c.flag}`} src={c.flag} />
+                    <Img className='flag' src={c.flag} 
+                     loader={<img alt={`bandeira ${c.flag}`} src={load} 
+                     styles="width: 150px; height: 100px"/>}/>
                     <div className='info'>
                         <h2>{c.name}</h2> <br />
                         <div className='country-details'>
