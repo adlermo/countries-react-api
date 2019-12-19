@@ -95,12 +95,12 @@ section div .back img {
     display: grid;
     grid-template-columns: auto auto;
     
+    margin-top: 5%;
     padding: 40px;
 }
 
 .country-info .flag {
     width: 35vw;
-    height: 55vh;
     box-shadow: 0 0 5px #e2e2e2;
     object-fit: cover;
 }
