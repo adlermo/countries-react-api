@@ -20,7 +20,23 @@ My portfolio :computer:
  ```
  *Your application will be avaiable on localhost:5000*
 
+## Interfaces
 
+### Mobile
+
+#### Home - Countries List
+<img src="/public/img/mobile-home-interface.png">
+
+#### Country Information
+<img src="/public/img/mobile-detail-interface.png">
+
+### Desktop
+
+#### Home - Countries List
+<img src="/public/img/desktop-home-interface.png">
+
+#### Country Information
+<img src="/public/img/desktop-detail-interface.png">
 
 ## Dependencies
  
